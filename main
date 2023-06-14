@@ -1,0 +1,3 @@
+#!/bin/bash
+
+time singularity exec -e docker://brainlife/freesurer:7.3.2 ./convert-func-to-nii.sh
