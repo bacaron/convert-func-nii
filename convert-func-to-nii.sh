@@ -3,6 +3,7 @@
 func_path=`jq -r '.func_path' config.json`
 fsaverage_path='./fsaverage'
 outpath=${func_path}/niftis
+[ ! -d $outpath ] && mkdir outpath
 
 files=(`find ${func_path} -name *.func.gii`)
 
