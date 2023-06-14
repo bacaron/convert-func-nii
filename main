@@ -1,3 +1,3 @@
 #!/bin/bash
 
-time singularity exec -e docker://brainlife/freesurer:7.3.2 ./convert-func-to-nii.sh
+time singularity exec -e -B `pwd`/license.txt:/usr/local/freesurfer/license.txt docker://brainlife/freesurfer:7.3.2 ./convert-func-to-nii.sh
